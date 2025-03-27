@@ -17,7 +17,7 @@ export default function Header() {
 	}, []);
 
 	return (
-		<header id={"header"} className={`shadow-lg shadow-gray-600/40 w-full md:w-96 md:rounded-full fixed bg-background ${hidden ? '-translate-y-full' : 'translate-y-0'}`}>
+		<header id={"header"} className={`shadow-lg shadow-gray-600/40 w-full z-10 md:w-96 md:rounded-full fixed bg-background ${hidden ? '-translate-y-44' : 'translate-y-0'}`}>
 			<Navbar/>
 		</header>
 	)

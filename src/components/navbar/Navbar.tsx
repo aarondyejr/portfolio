@@ -1,4 +1,4 @@
-import {Menu, Scroll} from 'lucide-react'
+import {Menu, Pen, Scroll} from 'lucide-react'
 import {
 	DropdownMenu,
 	DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem,
@@ -10,15 +10,15 @@ export default function Navbar() {
 	return(
 		<>
 			<div className={"w-full flex flex-row justify-between items-center p-4"}>
-				<div className={"hidden md:block"}>
+				<div>
 					<h1>Aaron Dye Jr</h1>
 				</div>
 				<div className={"hidden md:block"}>
 					<div className={"flex flex-row gap-4"}>
 						<a href="#skills">Skills</a>
+						<a href="#projects">Projects</a>
 					</div>
 				</div>
-				<div className={"block md:hidden"}></div>
 				<div className={"block md:hidden"}>
 					<DropdownMenu>
 						<DropdownMenuTrigger><Menu/></DropdownMenuTrigger>
@@ -26,10 +26,18 @@ export default function Navbar() {
 							<DropdownMenuLabel>Portfolio Sections</DropdownMenuLabel>
 							<DropdownMenuSeparator/>
 							<DropdownMenuGroup>
-								<DropdownMenuItem>
-									<Scroll />
-									<span>Skills</span>
-								</DropdownMenuItem>
+								<a href="#skills">
+									<DropdownMenuItem>
+										<Scroll/>
+										<span>Skills</span>
+									</DropdownMenuItem>
+								</a>
+								<a href="#projects">
+									<DropdownMenuItem>
+										<Pen/>
+										<span>Projects</span>
+									</DropdownMenuItem>
+								</a>
 							</DropdownMenuGroup>
 						</DropdownMenuContent>
 					</DropdownMenu>
