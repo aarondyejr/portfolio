@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')!).render(
       <div className={"flex justify-center p-0 md:p-4"}>
         <Header />
       </div>
-      <main className={"p-4 space-y-4"}>
+      <main className={"p-16 space-y-4"}>
         <RouterProvider router={router}/>
       </main>
     </div>
